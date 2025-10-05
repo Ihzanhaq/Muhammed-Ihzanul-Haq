@@ -1,0 +1,127 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+#home {
+  background-image: linear-gradient(#e0e7ff, #eff6ff);
+  padding-top: 72px;
+}
+
+.nav-custom {
+  background-image: linear-gradient(#e3e5ed, #eff6ff);
+  z-index: 9999;
+}
+
+.hero-left {
+  row-gap: 20px;
+}
+
+.hero {
+  height: 90%;
+}
+
+#home img {
+  border-radius: 50%;
+  border: 10px solid rgb(59 130 246);
+  animation-name: colorChange;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    border: 15px solid rgb(59 130 246);
+  }
+  50% {
+    border: 15px solid rgba(59, 131, 246, 0.212);
+  }
+  100% {
+    border: 15px solid rgb(59 130 246);
+  }
+}
+
+#about,
+#skills,
+#projects,
+#education {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#skills,
+#education {
+  background-image: linear-gradient(#e0e7ff, #eff6ff);
+  padding-top: 30px;
+}
+
+.skill-card {
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 1s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.06);
+  transition: .3s ease;
+}
+
+.skill-card p {
+  font-size: 1rem;
+  background-color: rgb(140, 255, 179);
+  display: inline;
+  padding: 1px 10px;
+  border-radius: 60px;
+  margin-bottom: 10px;
+}
+
+.progress {
+  margin-top: 20px;
+}
+
+.card-container {
+  background-color: #ffffff;
+  display: grid;
+  border-radius: 10px;
+    transition: .3s ease;
+}
+
+.card-container:hover{
+    transform: scale(1.06);
+  transition: .3s ease;
+}
+
+.card-container span {
+  background-color: rgba(239, 242, 233, 0.832);
+  padding: 5px 10px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .card-container {
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: rgb(31 41 55);
+}
+
+.col-custom {
+  border-right: 1px solid #eff6ff6b;
+}
+
+@media (max-width: 768px) {
+  .col-custom {
+    border-right: none;
+  }
+}
